@@ -1,0 +1,44 @@
+{% extends 'oscar/order/partials/basket_totals.html' %}
+{% load i18n %}
+{% load currency_filters %}
+
+{% block shipping_total %}
+    <tr>
+        <th>&nbsp;</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th colspan="2"><h3>{% trans "Shipping" %}</h3></th>
+    </tr>
+    <tr>
+        <td>{% trans "Shipping method" %}</td>
+        <td class="text-right">{% trans "Delivery at the carrier's rates" %}</td>
+    <!--/tr>
+    {% if order.has_shipping_discounts %}
+        <tr>
+            <td>{% trans "Shipping charge (before discounts)" %}</td>
+            <td class="text-right">{{ order.shipping_before_discounts_incl_tax|currency:order.currency }}</td>
+        </tr>
+        {% for discount in order.shipping_discounts %}
+            <tr>
+                <td><span class="badge badge-success">{% trans "Discount" %}</span> {{ discount.offer }}</td>
+                <td class="text-right">- {{ discount.amount|currency:order.currency }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <th class="total">{% trans "Shipping charge (after discounts)" %}</th>
+            <th class="total text-right">{{ order.shipping_incl_tax|currency:order.currency }}</th>
+        </tr>
+    {% else %}
+        <tr>
+            <th class="total">{% trans "Shipping charge" %}</th>
+            <th class="total text-right">
+                {% if show_tax_separately %}
+                    {{ order.shipping_excl_tax|currency:order.currency }}
+                {% else %}
+                    {{ order.shipping_incl_tax|currency:order.currency }}
+                {% endif %}
+            </th>
+        </tr-->
+    {% endif %}
+{% endblock shipping_total %}
