@@ -1,0 +1,7 @@
+{% extends "oscar/checkout/payment_details.html" %}
+{% load i18n %}
+{% block payment_details_content %}
+<p>{% trans "payment at the branch of the new post office" %}</p>
+<a id="view_preview" href="{% url 'checkout:preview' %}"
+    class="btn btn-primary btn-lg">{% trans "Continue" %}</a>
+{% endblock payment_details_content %}
