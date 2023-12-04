@@ -1,0 +1,381 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-03 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: shopping_online_tour/settings.py:195
+msgid "Ukrainian"
+msgstr ""
+
+#: shopping_online_tour/settings.py:196
+msgid "English"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:8
+msgid "Important messages about items in your basket"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:16
+msgid "You could be missing out on offers!"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:18
+#, python-format
+msgid ""
+"\n"
+"                <div class=\"warning\">%(message)s to qualify for the <a "
+"href=\"%(url)s\">%(offer_name)s</a> special offer</div>\n"
+"            "
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:29
+msgid "Items to buy now"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:30
+#: templates/oscar/customer/anon_order.html:60
+msgid "Quantity"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:31
+#: templates/oscar/basket/partials/basket_content.html:92
+#: templates/oscar/basket/partials/basket_content.html:183
+msgid "Price"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:32
+#: templates/oscar/basket/partials/basket_content.html:107
+msgid "Total"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:65
+msgid "Updating..."
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:65
+msgid "Update"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:70
+#: templates/oscar/basket/partials/basket_content.html:205
+#: templates/oscar/basket/partials/basket_totals.html:59
+msgid "Remove"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:72
+msgid "Save for later"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:129
+msgid "Voucher/promo code"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:131
+msgid "I have a voucher code..."
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:137
+msgid "Adding..."
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:137
+msgid "Add voucher"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:138
+msgid "or"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:138
+msgid "cancel"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:148
+#: templates/oscar/customer/anon_order.html:101
+msgid "Totals"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:160
+msgid "Proceed to checkout"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:169
+msgid "Your basket is empty."
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:170
+msgid "Continue shopping"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:179
+msgid "Items to buy later"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:182
+msgid "Items"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_content.html:222
+msgid "Move to basket"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:10
+#: templates/oscar/basket/partials/basket_totals.html:233
+msgid "Basket"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:20
+msgid "Basket total (before discounts)"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:45
+msgid "Vouchers"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:73
+msgid "Basket total (after discounts)"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:85
+msgid "Basket total"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:151
+#: templates/oscar/checkout/thank_you.html:34
+#: templates/oscar/order/partials/basket_totals.html:14
+msgid "Shipping method"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:155
+msgid "Shipping total (before discounts)"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:179
+msgid "Shipping total (after discounts)"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:201
+msgid "Surcharges"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:229
+msgid "Tax"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:239
+#: templates/oscar/checkout/checkout.html:10
+#: templates/oscar/checkout/thank_you.html:6
+#: templates/oscar/order/partials/basket_totals.html:11
+msgid "Shipping"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:254
+msgid "Post order actions"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:275
+#: templates/oscar/customer/anon_order.html:115
+msgid "Order total"
+msgstr ""
+
+#: templates/oscar/basket/partials/basket_totals.html:288
+msgid "Taxes will be added during checkout."
+msgstr ""
+
+#: templates/oscar/catalogue/browse.html:8
+msgid "Home"
+msgstr ""
+
+#: templates/oscar/catalogue/category.html:9
+msgid "Edit this category"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:15
+#: templates/oscar/checkout/thank_you.html:9
+#: templates/oscar/customer/anon_order.html:21
+msgid "Address"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:18
+msgid "Change"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:27
+#: templates/oscar/checkout/thank_you.html:17
+msgid "Contact"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:29
+#: templates/oscar/checkout/thank_you.html:19
+msgid "Phone"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:31
+#: templates/oscar/checkout/thank_you.html:21
+msgid "Email"
+msgstr ""
+
+#: templates/oscar/checkout/checkout.html:36
+#: templates/oscar/checkout/thank_you.html:26
+msgid "Instructions"
+msgstr ""
+
+#: templates/oscar/checkout/payment_details.html:4
+msgid "payment at the branch of the new post office"
+msgstr "оплата у відділенні нової пошти"
+
+#: templates/oscar/checkout/payment_details.html:6
+msgid "Continue"
+msgstr ""
+
+#: templates/oscar/checkout/thank_you.html:30
+msgid "No shipping address required."
+msgstr ""
+
+#: templates/oscar/checkout/thank_you.html:35
+#: templates/oscar/order/partials/basket_totals.html:15
+msgid "Delivery at the carrier's rates"
+msgstr "Доставка за тарифами перевізника"
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:7
+msgid "Hello,"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:8
+#, python-format
+msgid ""
+"We are pleased to confirm your order %(order_number)s has been received and\n"
+"        will be processed shortly."
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:17
+msgid "Your order contains:"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:30
+msgid "Basket total:"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:34
+msgid "Shipping:"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:38
+msgid "Order Total:"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:51
+msgid "Shipping address:"
+msgstr ""
+
+#: templates/oscar/communication/emails/commtype_order_placed_body.html:61
+#, python-format
+msgid ""
+"You can view the status of this order by clicking <a "
+"href=\"%(absolute_status_url)s\" title=\"order status\">here</a>"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:10
+#: templates/oscar/customer/anon_order.html:59
+msgid "Status"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:17
+msgid "Shipping address"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:30
+msgid "Contact number"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:36
+msgid "Notes"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:53
+msgid "Order contents"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:58
+msgid "Product"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:61
+msgid "Line price excl. tax"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:62
+msgid "Line price incl. tax"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:83
+msgid "Write a review"
+msgstr ""
+
+#: templates/oscar/customer/anon_order.html:103
+msgid "Basket total (inc. tax)"
+msgstr ""
+
+#: templates/oscar/order/partials/basket_totals.html:19
+msgid "Shipping charge (before discounts)"
+msgstr ""
+
+#: templates/oscar/order/partials/basket_totals.html:24
+msgid "Discount"
+msgstr ""
+
+#: templates/oscar/order/partials/basket_totals.html:29
+msgid "Shipping charge (after discounts)"
+msgstr ""
+
+#: templates/oscar/order/partials/basket_totals.html:34
+msgid "Shipping charge"
+msgstr ""
+
+#: templates/oscar/catalogue/category.html:11
+msgid "Everything for the kitchen"
+msgstr "Все для кухні"
+
+
+#: templates/oscar/catalogue/category.html:11
+msgid "Home and garden products"
+msgstr "Товари для дому та саду"
+
+
+#: templates/oscar/catalogue/category.html:11
+msgid "Auto goods"
+msgstr "Автотовари"
+
+#: templates/oscar/catalogue/browse.html:16
+msgid "Blenders"
+msgstr "Блендери"
+
+#: shopping_online_tour/settings.py:234
+msgid "All for shopping"
+msgstr "Все для покупок"
+
+#: checkout/forms.py:20
+msgid "Branch number of Nova Poshta"
+msgstr "Номер відділення Нової Пошти"
+
+
+
+
