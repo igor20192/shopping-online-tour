@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     "django.contrib.flatpages",
     "oscar.config.Shop",
     "oscar.apps.analytics.apps.AnalyticsConfig",
-    "oscar.apps.checkout.apps.CheckoutConfig",
+    # "oscar.apps.checkout.apps.CheckoutConfig",
+    "checkout.apps.CheckoutConfig",
     "oscar.apps.address.apps.AddressConfig",
     "oscar.apps.shipping.apps.ShippingConfig",
     "oscar.apps.catalogue.apps.CatalogueConfig",
@@ -102,6 +103,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "oscar.apps.basket.middleware.BasketMiddleware",
     "django.contrib.flatpages.middleware.FlatpageFallbackMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
 ]
 
 AUTHENTICATION_BACKENDS = (
@@ -111,18 +113,19 @@ AUTHENTICATION_BACKENDS = (
 
 HAYSTACK_CONNECTIONS = {
     "default": {
-        "ENGINE": "haystack.backends.solr_backend.SolrEngine",
-        "URL": "http://127.0.0.1:8983/solr",
-        "INCLUDE_SPELLING": True,
+        "ENGINE": "haystack.backends.simple_backend.SimpleEngine",
     },
 }
 
+
 ROOT_URLCONF = "shopping_online_tour.urls"
+
+location = lambda x: os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", x)
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [location("templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -184,7 +187,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "uk"
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, "locale"),
+]
 
 LANGUAGES = [
     ("uk", _("Ukrainian")),
@@ -211,3 +217,49 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+OSCAR_REQUIRED_ADDRESS_FIELDS = (
+    "first_name",
+    "last_name",
+    "line1",
+    "line4",
+    # "postcode",
+    "country",
+    "phone_number",
+    "state",
+    "county",
+)
+
+OSCAR_SHOP_NAME = "Shopping tour"
+OSCAR_SHOP_TAGLINE = _("All for shopping")
+OSCAR_ALLOW_ANON_CHECKOUT = True
+OSCAR_DEFAULT_CURRENCY = "UAH"
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_USE_TLS = True
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = 587
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
+
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "console": {"format": "%(name)-12s %(levelname)-8s %(message)s"},
+        "file": {"format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"},
+    },
+    "handlers": {
+        "console": {"class": "logging.StreamHandler", "formatter": "console"},
+        "file": {
+            "level": "ERROR",
+            "class": "logging.FileHandler",
+            "formatter": "file",
+            "filename": "debug.log",
+        },
+    },
+    "loggers": {"": {"level": "ERROR", "handlers": ["console", "file"]}},
+}
