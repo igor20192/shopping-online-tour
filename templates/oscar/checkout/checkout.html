@@ -1,0 +1,59 @@
+{% extends "oscar/checkout/checkout.html" %}
+{% load i18n %}
+
+{% block payment_method %}
+{% endblock payment_method %}
+
+{% block shipping_address %}
+<div class="col-sm-6">
+    <div class="sub-header">
+        <h2>{% trans "Shipping" %}</h2>
+    </div>
+    {% if shipping_address %}
+    <div class="card card-body bg-light">
+        <h3>
+            {% trans "Address" %}
+            {% block shipping_address_actions %}
+            <a href="{% url 'checkout:shipping-address' %}" class="float-right">
+                {% trans "Change" %}
+            </a>
+            {% endblock %}</h3>
+        <address>
+            {% for field in shipping_address.active_address_fields %}
+            {{ field }}<br />
+            {% endfor %}
+        </address>
+        {% if shipping_address.phone_number %}
+        <h4>{% trans "Contact" %}</h4>
+        <p>
+            {% trans "Phone" %}: {{ shipping_address.phone_number }}
+            {% if guest_email %}
+            <br />{% trans "Email" %}: {{ guest_email }}
+            {% endif %}
+        </p>
+        {% endif %}
+        {% if shipping_address.notes %}
+        <h4>{% trans "Instructions" %}</h4>
+        <p>{{ shipping_address.notes|linebreaks }}</p>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% if not shipping_method %}
+    <div class="card card-body bg-light card card-body bg-light-info">
+        <h3>
+            {% trans "Shipping method" %}
+            {% block shipping_method_actions %}
+            <a href="{% url 'checkout:shipping-method' %}" class="float-right">
+                {% trans "Change" %}
+            </a>
+            {% endblock %}
+        </h3>
+        <p>{{ shipping_method.name }}
+            {% if shipping_method.description %}
+            - {{ shipping_method.description|safe }}
+            {% endif %}
+        </p>
+    </div>
+    {% endif %}
+</div>
+{% endblock shipping_address %}
