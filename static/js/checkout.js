@@ -1,12 +1,13 @@
-
 document.addEventListener('DOMContentLoaded', function () {
+    let line1Field = document.querySelector('#id_line1');
+    let cityField = document.querySelector('#id_line4');
+
+    // Инициализация Select2 для поля выбора отделения
+    $(line1Field).select2();
+
     // Обработчик события изменения значения поля "line4"
-    document.querySelector('#id_line4').addEventListener('change', function () {
+    cityField.addEventListener('change', function () {
         let city = this.value;
-        let line1Field = document.querySelector('#id_line1');
-        console.log(city)
-        // Очищаем поле "Branch number of Nova Poshta"
-        line1Field.value = '';
 
         // Отправляем запрос к API Новой Почты
         fetch(`/checkout/api_nova_poshta_warehouses/${encodeURIComponent(city)}`)
@@ -21,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     options += `<option value="${warehouses[i].Number}">${warehouses[i].Description}</option>`;
                 }
 
-                line1Field.innerHTML = `<select name="line1" id="id_line1">${options}</select>`;
-                console.log(options)
+                // Обновляем содержимое Select2
+                //$(line1Field).html(options).trigger('change');
+                $(line1Field).html(options).select2('destroy').select2();
             })
             .catch(error => {
                 console.error('Error fetching warehouses:', error);
