@@ -50,6 +50,8 @@ nosetests.xml
 /.pytest_cache/
 /htmlcov/*
 /.tox/*
+.env.db
+.env
 
 # Sandbox content
 settings_local.py
