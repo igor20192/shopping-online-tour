@@ -226,7 +226,7 @@ OSCAR_REQUIRED_ADDRESS_FIELDS = (
     # "postcode",
     "country",
     "phone_number",
-    "state",
+    # "state",
     "county",
 )
 
@@ -234,6 +234,8 @@ OSCAR_SHOP_NAME = "Shopping tour"
 OSCAR_SHOP_TAGLINE = _("All for shopping")
 OSCAR_ALLOW_ANON_CHECKOUT = True
 OSCAR_DEFAULT_CURRENCY = "UAH"
+OSCAR_FROM_EMAIL = env("EMAIL_HOST_USER")
+
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
