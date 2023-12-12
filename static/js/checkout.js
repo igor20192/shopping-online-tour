@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             let cities = data.cities;
-            console.log(cities[0])
             let options = '';
             for (let i = 0; i < cities.length; i++) {
                 options += `<option value="${cities[i]}">${cities[i]}</option>`;
