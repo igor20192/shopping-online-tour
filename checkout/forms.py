@@ -8,10 +8,20 @@ class ShippingAddressForm(ShippingAddressForm):
         fields = [
             "first_name",
             "last_name",
-            "line1",
             "line4",
-            "state",
+            "line1",
+            # "state",
             # "postcode",
+            "country",
+            "phone_number",
+            "notes",
+        ]
+        field_order = [
+            "first_name",
+            "last_name",
+            "line4",
+            "line1",
+            "state",
             "country",
             "phone_number",
             "notes",
