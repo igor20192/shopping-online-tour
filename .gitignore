@@ -62,3 +62,4 @@ settings_local.py
 /sandbox/logs/
 
 debug.log
+staticfiles
