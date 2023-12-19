@@ -7,7 +7,6 @@ services:
       bash -c "python manage.py makemigrations &&
               python manage.py migrate &&
               python manage.py collectstatic --noinput &&
-              ln -s /usr/local/lib/python3.12/site-packages/oscar/static/oscar/img/image_not_found.jpg /usr/src/shopping-online-tour/media/ &&
               gunicorn shopping_online_tour.wsgi:application -c gunicorn_config.py"
     restart: always
     volumes:
@@ -31,6 +30,7 @@ services:
 
   nginx:
     build: ./nginx
+    restart: unless-stopped
     volumes:
       - ./media/:/usr/src/shopping-online-tour/media/
       - ./staticfiles/:/usr/src/shopping-online-tour/staticfiles/
