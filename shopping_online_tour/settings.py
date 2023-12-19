@@ -39,7 +39,12 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split()
 
 # CSRF_TRUSTED_ORIGINS = [env("CSRF_TRUSTED_ORIGINS")]
 # CSRF_COOKIE_DOMAIN = env("CSRF_COOKIE_DOMAIN")
-
+SECURE_HSTS_SECONDS = 10
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 
 # Application definition
 
@@ -210,8 +215,10 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_URL = "/media/"
+
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
