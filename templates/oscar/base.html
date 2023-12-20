@@ -1,12 +1,17 @@
 {% extends 'oscar/base.html' %}
 {% load static %}
 
+{% block favicon %}
+<link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+{% endblock %}
+
 {% block extrahead %}
 <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
 {% endblock %}
 
 {% block scripts %}
-<script src="{% static 'js/checkout.js' %}"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="{% static 'script/checkout/checkout.js' %}"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 {% endblock %}
