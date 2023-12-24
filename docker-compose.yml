@@ -34,6 +34,7 @@ services:
     volumes:
       - ./media/:/usr/src/shopping-online-tour/media/
       - ./staticfiles/:/usr/src/shopping-online-tour/staticfiles/
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/
     ports:
       - 80:80
       - 443:443
