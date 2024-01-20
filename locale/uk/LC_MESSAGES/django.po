@@ -376,6 +376,24 @@ msgstr "Все для покупок"
 msgid "Branch number of Nova Poshta"
 msgstr "Номер відділення Нової Пошти"
 
+msgid "Blender DOMOTEC MS-5103 3in1 (finished, 500W, stainless)"
+msgstr "Блендер DOMOTEC MS-5103 3в1 (занурювальний, 500Вт, нерж.)"
+
+msgid "Our range includes blenders for any task and budget."
+msgstr "У нашому асортименті представлені блендери для будь-яких завдань та бюджету."
+
+msgid "Blenders are a versatile kitchen appliance that can be used to prepare a wide range of dishes. They can chop, whip, blend, puree and even make soups and smoothies."
+msgstr "Блендери - універсальний кухонний прилад, який можна використовувати для приготування широкого спектру страв. Вони можуть подрібнювати, збивати, змішувати, пюрувати і навіть готувати супи та смузі."
+
+msgid "The kitchen is the heart of the home. This is where we cook food and spend time with family and friends. We want your kitchen to be cozy and functional. With the help of products from the “Everything for the Kitchen” category, you can create the perfect corner for culinary experiments and a pleasant pastime." 
+msgstr "Кухня – це серце будинку. Тут ми готуємо їжу, проводимо час із сім'єю та друзями. Ми хочемо, щоб ваша кухня була затишною та функціональною. За допомогою товарів з категорії 'Все для кухні' ви зможете створити ідеальний куточок для кулінарних експериментів та приємного проведення часу."
+
+
+
+
+
+
+
 
 
 
