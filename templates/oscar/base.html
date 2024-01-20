@@ -1,11 +1,18 @@
 {% extends 'oscar/base.html' %}
 {% load static %}
 
+{% block description %}
+Широкий вибір товарів для вашого будинку! У нас ви знайдете все для кухні,
+будинки, спорту, зоотовари та багато іншого. Якісні товари за доступними цінами.
+Купуйте із задоволенням та створюйте затишок у своєму будинку.
+{% endblock %}
+
 {% block favicon %}
 <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
 {% endblock %}
 
 {% block extrahead %}
+<meta name="keywords" content="{{keywords}}">
 <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
 {% endblock %}
