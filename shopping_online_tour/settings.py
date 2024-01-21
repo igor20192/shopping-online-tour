@@ -242,7 +242,7 @@ OSCAR_REQUIRED_ADDRESS_FIELDS = (
 )
 
 OSCAR_SHOP_NAME = "Shopping tour"
-OSCAR_SHOP_TAGLINE = _("All for shopping")
+OSCAR_SHOP_TAGLINE = _("Everything for shopping at low prices")
 OSCAR_ALLOW_ANON_CHECKOUT = True
 OSCAR_DEFAULT_CURRENCY = "UAH"
 OSCAR_FROM_EMAIL = env("EMAIL_HOST_USER")
