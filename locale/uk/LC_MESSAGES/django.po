@@ -388,6 +388,8 @@ msgstr "Блендери - універсальний кухонний прил�
 msgid "The kitchen is the heart of the home. This is where we cook food and spend time with family and friends. We want your kitchen to be cozy and functional. With the help of products from the “Everything for the Kitchen” category, you can create the perfect corner for culinary experiments and a pleasant pastime." 
 msgstr "Кухня – це серце будинку. Тут ми готуємо їжу, проводимо час із сім'єю та друзями. Ми хочемо, щоб ваша кухня була затишною та функціональною. За допомогою товарів з категорії 'Все для кухні' ви зможете створити ідеальний куточок для кулінарних експериментів та приємного проведення часу."
 
+msgid "Everything for shopping at low prices"
+msgstr "Все для покупок за низькими цінами"
 
 
 
