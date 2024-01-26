@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.sites",
+    "django.contrib.sitemaps",
     "django.contrib.flatpages",
     "oscar.config.Shop",
     "oscar.apps.analytics.apps.AnalyticsConfig",
