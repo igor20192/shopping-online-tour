@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /static/
 Disallow: /media/
-Sitemap: http://shoppingtour.click/sitemap.xml
+Sitemap: https://shoppingtour.click/sitemap.xml
