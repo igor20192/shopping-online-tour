@@ -1,7 +1,7 @@
 from django.contrib import sitemaps
 from django.db.models.base import Model
 from django.urls import reverse
-from oscar.apps.catalogue.models import Product
+from catalogue.models import Product
 
 
 class StaticViewSitemap(sitemaps.Sitemap):
