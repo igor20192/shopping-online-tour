@@ -397,7 +397,8 @@ msgstr "Термоси"
 msgid "Thermoses are convenient and practical products that allow you to keep drinks hot or cold for a long time. They are indispensable for office workers, students, tourists and travelers."
 msgstr "Термоси - це зручні та практичні вироби, які дозволяють зберігати напої гарячими або холодними протягом тривалого часу. Вони незамінні для офісних працівників, студентів, туристів та мандрівників."
 
-
+msgid "keywords"
+msgstr "ключові слова"
 
 
 
