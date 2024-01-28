@@ -24,7 +24,7 @@ from sitemaps import StaticViewSitemap
 
 
 sitemaps = {
-    "static": StaticViewSitemap,
+    "product": StaticViewSitemap,
 }
 
 
