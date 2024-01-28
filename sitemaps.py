@@ -1,5 +1,7 @@
 from django.contrib import sitemaps
+from django.db.models.base import Model
 from django.urls import reverse
+from oscar.apps.catalogue.models import Product
 
 
 class StaticViewSitemap(sitemaps.Sitemap):
@@ -7,7 +9,7 @@ class StaticViewSitemap(sitemaps.Sitemap):
     changefreq = "daily"
 
     def items(self):
-        return ["product_category", "product_detail"]
+        return Product.objects.all()
 
-    def location(self, item):
-        return reverse(item)
+    def lastmod(self, obj):
+        return obj.date_updated
