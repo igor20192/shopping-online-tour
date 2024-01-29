@@ -1,10 +1,8 @@
 from django.contrib import sitemaps
-from django.db.models.base import Model
-from django.urls import reverse
-from catalogue.models import Product
+from catalogue.models import Product, Category
 
 
-class StaticViewSitemap(sitemaps.Sitemap):
+class ProductSitemap(sitemaps.Sitemap):
     priority = 0.5
     changefreq = "daily"
 
@@ -13,3 +11,11 @@ class StaticViewSitemap(sitemaps.Sitemap):
 
     def lastmod(self, obj):
         return obj.date_updated
+
+
+class CategorySitemap(sitemaps.Sitemap):
+    priority = 0.5
+    chagefreq = "daily"
+
+    def items(self):
+        return Category.objects.all()
