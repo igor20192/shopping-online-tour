@@ -20,12 +20,10 @@ from django.apps import apps
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
-from sitemaps import StaticViewSitemap
+from sitemaps import ProductSitemap, CategorySitemap
 
 
-sitemaps = {
-    "product": StaticViewSitemap,
-}
+sitemaps = {"product": ProductSitemap, "category": CategorySitemap}
 
 
 urlpatterns = (
