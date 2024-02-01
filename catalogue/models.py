@@ -10,7 +10,7 @@ class Category(AbstractCategory):
 
 class Product(AbstractProduct):
     title = models.CharField(
-        pgettext_lazy("Product title", "Title"), max_length=355, blank=True
+        pgettext_lazy("Product title", "Title"), max_length=500, blank=True
     )
     keywords = models.TextField(_("keywords"), blank=True)
 
