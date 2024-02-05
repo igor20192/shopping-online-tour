@@ -1,4 +1,4 @@
-from oscar.apps.checkout.mixins import CheckoutSessionMixin
+from oscar.apps.checkout.mixins import *
 from oscar.apps.checkout.mixins import OrderPlacementMixin as CoreOrderPlacementMixin
 from twilio.rest import Client
 from django.conf import settings
@@ -7,7 +7,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class CustomOrderPlacementMixin(CoreOrderPlacementMixin):
+class OrderPlacementMixin(CoreOrderPlacementMixin):
     """
     Custom OrderPlacementMixin for handling order placement with additional SMS notification functionality.
 
