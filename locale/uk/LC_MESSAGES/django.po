@@ -504,3 +504,46 @@ msgstr "Блендер Domotec MS 5101: Потужність 350W, Нержав�
 
 msgid "Hand blender SeaBreeze SB-090"
 msgstr "Блендер занурювальний ручний SeaBreeze SB-090"
+
+msgid "Welcome to our Kettles category, where you will find a wide selection of electric and brewing kettles to meet all your tea needs. Our range offers state-of-the-art models with a variety of features and designs so you can find the kettle that's perfect for your lifestyle."
+msgstr "Ласкаво просимо в нашу категорію Чайники, де ви знайдете широкий вибір електричних та заварювальних чайників для задоволення всіх вашої чайної потреби. Наш асортимент пропонує найсучасніші моделі з різноманітними функціями та дизайном, щоб ви могли знайти чайник, який ідеально підходить для вашого стилю життя."
+
+msgid "Electric and teapots:"
+msgstr "Електричні та Заварювальні Чайники:"
+
+msgid "Electric kettles:"
+msgstr "Електричні Чайники:"
+
+msgid "Optimal speed and ease of use are what make electric kettles popular. Choose a kettle with an adjustable temperature, a keep warm function, or other useful features."
+msgstr "Оптимальна швидкість та зручність в обслуговуванні – це те, що робить електричні чайники популярними. Виберіть чайник з регульованою температурою, функцією підтримки тепла або іншими корисними особливостями."
+
+msgid "Teapots:"
+msgstr "Заварювальні Чайники:"
+
+msgid "Main Advantages of Our Assortment:"
+msgstr "Основні Переваги Нашого Асортименту:"
+
+msgid "Wide Selection: From compact single-cup electric kettles to large brewing kettles for the whole family, we have a kettle for everyone."
+msgstr "Широкий Вибір: Від компактних електричних чайників для одного чашки до великих заварювальних чайників для всієї родини, у нас є чайник для кожного."
+
+msgid "A variety of functions: Keeping warm, adjustable temperature, automatic shut-off - choose the kettle with the functions you need for maximum comfort."
+msgstr "Різноманіття Функцій: Підтримка тепла, регульована температура, автоматичне відключення – обирайте чайник із необхідними функціями для максимального комфорту."
+
+msgid "Modern Design: Our kettles look stylish and modern, adding aesthetics to your kitchen."
+msgstr "Сучасний Дизайн: Наші чайники виглядають стильно та сучасно, додаючи естетику до вашої кухні."
+
+msgid "Affordable Prices: We offer competitive prices for all of our kettles, providing you with quality at an affordable price."
+msgstr "Доступні Ціни: Ми пропонуємо конкурентоспроможні ціни на всі наші чайники, забезпечуючи вам якість за доступною ціною."
+
+msgid "Deepen your tea ritual with the perfect teapot from us. Order now and enjoy your favorite drink even more!"
+msgstr "Поглибте свій чайний ритуал з ідеальним чайником від нас. Замовте зараз та насолоджуйтесь своїм улюбленим напоєм ще більше!"
+
+msgid "Kettles: Buy Electric and Teapots in Ukraine | Large Selection and Low Prices"
+msgstr "Чайники: Купити Електричні та Заварювальні Чайники в Україні | Великий Вибір та Низькі Ціни"
+
+msgid "Choose the perfect kettle for your needs. Buy electric and brewing kettles with a variety of functions and stylish designs at affordable prices. Fast delivery and quality service. Deepen your tea ritual with our range of kettles."
+msgstr "Обирайте ідеальний чайник для своїх потреб. Купуйте електричні та заварювальні чайники з різноманітними функціями та стильним дизайном за доступними цінами. Швидка доставка та якісне обслуговування. Поглибте свій чайний ритуал з нашим асортиментом чайників."
+
+
+
+
