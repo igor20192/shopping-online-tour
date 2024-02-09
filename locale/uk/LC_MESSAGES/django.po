@@ -562,7 +562,7 @@ msgstr "Безпека є пріоритетом, адже зовнішня те
 msgid "The auto-off function activates when the boiling process is complete or the kettle is removed from the base. The cord wraps around the 360° rotating base, facilitating easy placement in your kitchen. The wireless base provides convenience and flexibility."
 msgstr "Функція автоматичного вимкнення активується після завершення процесу закипання або зняття чайника з підставки. Шнур обертається навколо підставки, що обертається на 360°, що полегшує його розміщення на кухні. Бездротова база забезпечує зручність і гнучкість."
 
-msgid "Key Features"
+msgid "Key Features:"
 msgstr "Ключові особливості"
 
 msgid "Double-Walled Construction: Outer layer made of heat-resistant plastic, inner flask crafted from high-quality stainless steel."
