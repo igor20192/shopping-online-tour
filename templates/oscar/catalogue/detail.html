@@ -7,6 +7,14 @@
 {% load i18n %}
 {% load purchase_info_tags %}
 
+{% block title %}
+    {% trans product.get_title %} | Shopping tour {% trans "Everything for shopping at low prices" %}
+{% endblock %}
+
+{% block description %}
+    {% trans product.get_meta_description %}
+{% endblock %}
+
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
