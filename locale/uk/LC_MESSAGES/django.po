@@ -498,3 +498,9 @@ msgstr "Купіть блендер Domotec MS 5101 з потужністю 350W
 
 msgid "Order the Domotec MS 5103 500W blender with functional attachments for mixing liquid foods, pureeing and standard blending tasks. Compact and powerful - the perfect solution for your kitchen!"
 msgstr "Замовте блендер Domotec MS 5103 з потужністю 500 Вт та функціональними насадками для змішування рідких продуктів, приготування пюре та стандартних блендерних завдань. Компактний та потужний - ідеальне рішення для вашої кухні!"
+
+msgid "Blender Domotec MS 5101: 350W Power, Stainless Steel, 2 Speed Modes | Buy Online"
+msgstr "Блендер Domotec MS 5101: Потужність 350W, Нержавіюча Сталь, 2 Режими Швидкості | Купити Онлайн"
+
+msgid "Hand blender SeaBreeze SB-090"
+msgstr "Блендер занурювальний ручний SeaBreeze SB-090"
