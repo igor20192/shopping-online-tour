@@ -517,8 +517,8 @@ msgstr "Електричні Чайники:"
 msgid "Optimal speed and ease of use are what make electric kettles popular. Choose a kettle with an adjustable temperature, a keep warm function, or other useful features."
 msgstr "Оптимальна швидкість та зручність в обслуговуванні – це те, що робить електричні чайники популярними. Виберіть чайник з регульованою температурою, функцією підтримки тепла або іншими корисними особливостями."
 
-msgid "Teapots:"
-msgstr "Заварювальні Чайники:"
+msgid "Teapots"
+msgstr "Чайники"
 
 msgid "Main Advantages of Our Assortment:"
 msgstr "Основні Переваги Нашого Асортименту:"
