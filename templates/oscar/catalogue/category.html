@@ -1,9 +1,8 @@
-{% extends 'oscar/catalogue/browse.html' %} 
+{% extends 'oscar/catalogue/browse.html' %}
 {% load i18n %}
 
-
 {% block title %}
-{{ category.get_meta_title }} | {{ block.super }}
+{% trans category.get_meta_title %} | {{ block.super }}
 {% endblock %}
 
 {% block header%}
@@ -38,7 +37,7 @@
 {% if category.description %}
 <div class="row">
     <div class="col-sm-9">
-        <p>{% trans description %}</p>        
+        <p>{% trans description %}</p>
     </div>
     {% if category.image %}
     <div class="col-sm-3"><img src="{{ category.image.url }}"
@@ -48,18 +47,3 @@
 {% endif %}
 {{block.super}}
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
