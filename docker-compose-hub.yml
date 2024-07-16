@@ -1,0 +1,56 @@
+version: '3.9'
+
+services:
+  web:
+    image: igor2022/shopping_tour_hub
+    command: >
+      bash -c "python manage.py makemigrations &&
+              python manage.py migrate &&
+              python manage.py collectstatic --noinput &&
+              gunicorn shopping_online_tour.wsgi:application -c gunicorn_config.py"
+    restart: always
+    volumes:
+      - ./media/:/usr/src/shopping-online-tour/media/
+      - ./staticfiles/:/usr/src/shopping-online-tour/staticfiles/
+      - /var/certbot/conf:/etc/letsencrypt/:ro
+    expose:
+      - 8080
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+  db:
+    image: postgres:15-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env.db
+    ports:
+      - 5432:5432
+
+  nginx:
+    build: ./nginx
+    restart: unless-stopped
+    volumes:
+      - /var/www/certbot:/var/www/certbot
+      - ./media/:/usr/src/shopping-online-tour/media/
+      - ./staticfiles/:/usr/src/shopping-online-tour/staticfiles/
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - /var/certbot/conf:/etc/letsencrypt/:ro
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - web
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - /var/certbot/conf:/etc/letsencrypt/:rw
+      - /var/certbot/www/:/var/www/certbot/:rw
+      - /var/www/certbot:/var/www/certbot
+    depends_on:
+      - nginx
+volumes:
+  postgres_data:
+  - ./certbot/www:/var/www/certbot
