@@ -53,4 +53,4 @@ services:
       - nginx
 volumes:
   postgres_data:
-  - ./certbot/www:/var/www/certbot
+  
