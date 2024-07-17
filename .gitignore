@@ -63,3 +63,5 @@ settings_local.py
 
 debug.log
 staticfiles
+
+docker-compose-local.yml
