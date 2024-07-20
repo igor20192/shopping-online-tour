@@ -591,3 +591,6 @@ msgstr "Чайник-термос SeaBreeze SB-016 об'ємом 2,5 л - сти
 
 msgid "kitchen equipment"
 msgstr "Кухонне обладнання"
+
+msgid "Mixers"
+msgstr "Міксери"
