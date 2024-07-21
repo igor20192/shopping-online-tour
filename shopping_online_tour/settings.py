@@ -100,7 +100,7 @@ INSTALLED_APPS = [
     "django_tables2",
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
