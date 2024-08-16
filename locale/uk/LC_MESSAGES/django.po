@@ -594,3 +594,6 @@ msgstr "Кухонне обладнання"
 
 msgid "Mixers"
 msgstr "Міксери"
+
+msgid "Sokovyzhimalki"
+msgstr "Соковижималки"
