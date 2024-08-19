@@ -28,6 +28,13 @@ services:
     ports:
       - 5432:5432
 
+  telegram_bot:
+    build:
+      context: ./KeywordNotifier
+    restart: unless-stopped
+    env_file:
+      - ./KeywordNotifier/.env 
+
   nginx:
     build: ./nginx
     restart: unless-stopped
