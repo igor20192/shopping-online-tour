@@ -1,5 +1,5 @@
 # Using the official Python image
-FROM python:3.12-bullseye
+FROM python:3.12-slim-bullseye
 
 # Setting up the working directory
 WORKDIR /usr/src/app
