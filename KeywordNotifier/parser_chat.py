@@ -73,7 +73,7 @@ async def process_dialogs():
                 if similarity >= similarity_threshold:
                     logger.info(f"Keyword found in chat: {dialog.name}")
                     await send_message_to_chat(dialog.id, message_to_send)
-                    
+                    break  # Stop after the first match
 
     except Exception as e:
         logger.error(f"Error processing dialogs: {e}")
