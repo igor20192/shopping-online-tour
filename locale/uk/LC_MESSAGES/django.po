@@ -597,3 +597,9 @@ msgstr "Міксери"
 
 msgid "Sokovyzhimalki"
 msgstr "Соковижималки"
+
+msgid "Large selection of cookware, kitchen appliances and accessories at bargain prices. Free delivery within the city."
+msgstr "Великий вибір посуду, кухонної техніки та аксесуарів за вигідними цінами. Безкоштовна доставка по місту."
+
+msgid "Everything for the kitchen: dishes, appliances, accessories - Shopping-online-tour"
+msgstr "Все для кухні: посуд, техніка, аксесуари - Шопінг-онлайн-тур"
