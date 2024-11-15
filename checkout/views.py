@@ -1,10 +1,7 @@
-from django.shortcuts import render
 import requests
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from pathlib import Path
 import environ
-import os
 
 
 class NovaPoshtaAPIBase(APIView):
